@@ -25,7 +25,7 @@ Philadelphia-based creative studio building experiences for personal growth.
 ## Why should I care?
 
 TODO: Values and
-[Philosophy](https://raw.githubusercontent.com/cutout-studios/.github/main/profile/PHILOSOPHY.md)
+[Philosophy](https://github.com/cutout-studios/.github/blob/main/profile/PHILOSOPHY.md)
 
 ## What are you gonna do about it?
 
@@ -40,5 +40,5 @@ TODO: Closing statement
 ---
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/cutout-studios/.github/main/profile/TRADEMARK.md">Copyright 2026, Cutout Studios</a>
+  <a href="https://github.com/cutout-studios/.github/blob/main/profile/TRADEMARK.md">Copyright 2026, Cutout Studios</a>
 </p>
