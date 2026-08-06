@@ -15,7 +15,7 @@
   </a>
 </p>
 
----
+<!-- ---
 
 ## What's this?
 
@@ -33,7 +33,7 @@ TODO: Project Roadmap
 
 ## In closing...
 
-TODO
+TODO -->
 
 ---
 
