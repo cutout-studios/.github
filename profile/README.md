@@ -24,18 +24,16 @@ Philadelphia-based creative studio building experiences for personal growth.
 
 ## Why should I care?
 
-TODO: Values and
+WIP: Values and
 [Philosophy](https://github.com/cutout-studios/.github/blob/main/profile/PHILOSOPHY.md)
 
 ## What are you gonna do about it?
 
-TODO: Now/Next/Later
+TODO: Project Roadmap
 
-| Name | Description | Status |
-| ---- | ----------- | ------ |
-| TODO | TODO        | TODO   |
+## In closing...
 
-TODO: Closing statement
+TODO
 
 ---
 

@@ -33,3 +33,13 @@ Examples:
 Existence is, to a degree, violence, and the pursuit of perfection is
 asymptotic, but we believe these rules will keep us walking the right path.
 Pushes are welcome should we ever stray.
+
+---
+
+<p align="center">
+  <em>This is a living document and will be updated as needed.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/cutout-studios/.github/blob/main/profile/TRADEMARK.md">Copyright 2026, Cutout Studios</a>
+</p>
