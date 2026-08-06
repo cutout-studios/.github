@@ -1,0 +1,46 @@
+name: Pull Request Checks
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  statuses: write
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pull Request Title
+        uses: amannn/action-semantic-pull-request@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          types: |
+            feat
+            fix
+            chore
+          scopes: |
+            [a-z]+(/[a-z]+)*
+
+  label:
+    name: Label
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Label Pull Request
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const addLabels =
+              await import(
+                "${{ github.workspace }}/.github/workflows/scripts/addLabels.js"
+              );
+
+            await addLabels.default({ github, context, core });

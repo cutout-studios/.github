@@ -1,0 +1,72 @@
+name: Create Draft Release
+on:
+  workflow_dispatch:
+    inputs:
+      directory:
+        type: choice
+        required: true
+        description: The workspace directory to publish.
+        default: jsx
+        options: [jsx]
+      increment:
+        type: choice
+        required: true
+        description: The semver increment to apply.
+        default: patch
+        options: [patch, minor, major]
+
+permissions:
+  contents: write
+
+jobs:
+  draft-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Bump Version
+        id: version
+        working-directory: ${{ inputs.directory }}
+        env:
+          INCREMENT: ${{ inputs.increment }}
+          DIRECTORY: ${{ inputs.directory }}
+        run: |
+          deno bump-version "${INCREMENT}" >/dev/null 2>&1
+          NEW_VERSION="$(deno bump-version 2>/dev/null | tail -n1)"
+          echo "tag_name=${DIRECTORY}/${NEW_VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Test Publish
+        working-directory: ${{ inputs.directory }}
+        run: deno publish --dry-run --allow-dirty
+
+      - name: Commit Version
+        uses: planetscale/ghcommit-action@v0.2.19
+        with:
+          commit_message: ${{ steps.version.outputs.tag_name }}
+          repo: ${{ github.repository }}
+          branch: ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+
+      - name: Tag Version
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          TAG_NAME: ${{ steps.version.outputs.tag_name }}
+        run: |
+          SHA="$(gh api "repos/${GITHUB_REPOSITORY}/git/ref/heads/${GITHUB_REF_NAME}" --jq .object.sha)"
+          gh api "repos/${GITHUB_REPOSITORY}/git/refs" -f ref="refs/tags/${TAG_NAME}" -f sha="${SHA}"
+
+      - name: Create Draft Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag_name }}
+          draft: true
+          generate_release_notes: true
