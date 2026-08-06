@@ -16,7 +16,7 @@ body:
       label: "Confirm: Verified Existing Issues"
       description: "Before proceeding, confirm you've searched for similar issues."
       options:
-        - label: "I have searched the [existing issues](https://github.com/cutout-studios/jsx/issues) and found no similar bug reports."
+        - label: "I have searched the existing issues and found no similar bug reports."
           required: true
 
   - type: textarea

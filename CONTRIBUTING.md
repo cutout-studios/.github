@@ -10,10 +10,8 @@
 
 ### **Unexpected Behavior**
 
-If you find a bug, please
-[open an issue](https://github.com/cutout-studios/toolbox/issues)! Include as
-much detail as possible in the form. Screenshots, logs, and video captures are
-super helpful!
+If you find a bug, please **open an issue**! Include as much detail as possible
+in the form. Screenshots, logs, and video captures are super helpful!
 
 > [!WARNING]
 > Security Vulnerabilities are different. Please see
@@ -22,13 +20,11 @@ super helpful!
 ### **Feature Requests**
 
 If you have an idea for a new feature or an improvement to an existing one,
-please [open an issue](https://github.com/cutout-studios/toolbox/issues) to
-discuss it!
+please **open an issue**ß to discuss it!
 
 ## **Submitting Code**
 
 ### **VSCode Setup**
 
-Look at the included
-[`.vscode/extensions.json`](https://github.com/cutout-studios/toolbox/blob/main/.vscode/extensions.json)
-to review the recommended extensions needed for this project.
+Look at the included `.vscode/extensions.json` to review the recommended
+extensions needed for this project.

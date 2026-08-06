@@ -20,4 +20,4 @@ not grant rights to the marks.
 - Imply endorsement, affiliation, or certification by Cutout Studios.
 
 Questions, or requests for permission:
-[brand@cutoutstudios.com](mailto:brand@cutoutstudios.com)
+[branding@cutoutstudios.com](mailto:branding@cutoutstudios.com)

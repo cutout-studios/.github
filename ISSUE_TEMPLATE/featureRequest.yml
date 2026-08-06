@@ -16,7 +16,7 @@ body:
       label: "Confirm: Verified Existing Feature Requests"
       description: "Before proceeding, confirm you've searched for similar feature requests. If a similar request exists, please add your thoughts there instead of opening a new one."
       options:
-        - label: "I have searched the [existing issues](https://github.com/cutout-studios/jsx/issues) and found no similar feature requests."
+        - label: "I have searched the existing issues and found no similar feature requests."
           required: true
 
   - type: textarea

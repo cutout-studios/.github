@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://cutoutstudios.com/">
-    <img src="./assets/banner.png" alt="Cutout Studois">
-  </a>
+  <img src="https://raw.githubusercontent.com/cutout-studios/.github/main/profile/assets/banner.webp" alt="Cutout Studios">
 </div>
 
 ---
@@ -26,7 +24,8 @@ Philadelphia-based creative studio building experiences for personal growth.
 
 ## Why should I care?
 
-TODO: [Philosophy](./PHILOSOPHY.md) and Values
+TODO: Values and
+[Philosophy](https://raw.githubusercontent.com/cutout-studios/.github/main/profile/PHILOSOPHY.md)
 
 ## What are you gonna do about it?
 
@@ -41,5 +40,5 @@ TODO: Closing statement
 ---
 
 <p align="center">
-  Copyright 2026, Cutout Studios
+  <a href="https://raw.githubusercontent.com/cutout-studios/.github/main/profile/TRADEMARK.md">Copyright 2026, Cutout Studios</a>
 </p>
