@@ -1,3 +1,6 @@
+> [!WARNING]
+> This document is an incomplete draft. It does not fully reflect our intended tone/implementation, though the spirit is largely intact.
+
 <!-- Repurpose and cultivate - Find ways to learn from and grow what’s already there. Be life-affirming!
 Empowerment through balance - Strength comes from equilibrium, not extremes.
 Openness with boundaries - Transparent and vulnerable, with an open mind: but aware of when to redirect.
