@@ -1,3 +1,8 @@
+<!-- Repurpose and cultivate - Find ways to learn from and grow what’s already there. Be life-affirming!
+Empowerment through balance - Strength comes from equilibrium, not extremes.
+Openness with boundaries - Transparent and vulnerable, with an open mind: but aware of when to redirect.
+Principled, yet pragmatic - We have values and we move forward. -->
+
 ## What's this about 'growth'?
 
 We believe that **good rules are key to good development.** Intentional

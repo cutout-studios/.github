@@ -19,7 +19,7 @@
 
 ## What's this?
 
-👋 Hi! We're [Cutout Studios](https://cutoutstudios.com/), a small
+👋 Hi! We're [Cutout Studios](https://cutoutstudios.com/), a (very) small
 Philadelphia-based creative studio building experiences for personal growth.
 
 ## Why should I care?
