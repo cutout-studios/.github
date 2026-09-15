@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/discord/1294993662534483978?logo=discord&logoColor=white" alt="discord">
+  <a href="https://discord.gg/DW5pyrjsYm">
+    <img src="https://img.shields.io/discord/1294993662534483978?logo=discord&logoColor=white" alt="discord">
+  </a>
   <a href="https://bsky.app/profile/cutoutstudios.com">
     <img src="https://img.shields.io/badge/Bluesky-blue?logo=bluesky&logoColor=white" alt="bluesky">
   </a>
